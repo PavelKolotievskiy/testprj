@@ -21,4 +21,5 @@ c.execute("insert into contacts (id, name) select 3, 'Sergey Sergeev'")
 for row in c.execute("select id, name from contacts"):
     print(row)
 
+conn.close()
 
